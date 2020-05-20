@@ -119,6 +119,7 @@
             android:id="@+id/spinner"
             android:layout_width="212dp"
             android:layout_height="36dp"
+            android:entries="@array/info_types"
             android:spinnerMode="dropdown" />
     </LinearLayout>
 

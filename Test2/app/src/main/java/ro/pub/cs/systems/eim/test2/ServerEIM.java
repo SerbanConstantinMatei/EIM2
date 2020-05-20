@@ -21,6 +21,14 @@ public class ServerEIM extends Thread {
         this.data = new HashMap<>();
     }
 
+    public synchronized void setData(String city, WeatherInformation weatherInformation) {
+        this.data.put(city, weatherInformation);
+    }
+
+    public synchronized HashMap<String, WeatherInformation> getData() {
+        return data;
+    }
+
     @Override
     public void run() {
         try {
